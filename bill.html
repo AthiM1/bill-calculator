@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>billCalculator</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+</head>
+<style type="text/css">
+  body{
+    text-align: center;
+    background-color: orange;
+  }
+  header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+  main{
+    background-color: pink;
+  }
+  button{
+      
+  width: 100%;
+  }
+  footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+</style>
+<body>
+  <!--this is a webpage that should display an option for food menu and callculator for the tip-->
+<div class="container">
+<header>
+ <center>
+    <h3>Athis Exclusive Pub and Resturant </h3>
+    
+  </center>
+</header>
+  
+
+  <br/>
+
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Menu
+      </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href=""onclick="myDrink()">Drinks</a>
+      <a class="dropdown-item" href=""onclick="myFood()">Food</a>
+     
+    </div>
+  </div>
+  <div><button onclick="myTip()">Add tip</button></div>
+  
+
+<main>
+<div id="result"></div>
+<div id="result2"></div>
+<div id="result3"></div>
+<div id="result4"></div>
+</main>
+<footer>
+  <p>This webpage was created by Athi Mbondwana &copy;</p>
+</footer>
+<script type="text/javascript" src="bill.js"></script>
+</body>
+</html>
